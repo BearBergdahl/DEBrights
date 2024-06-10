@@ -2,19 +2,17 @@ import random
 random.seed(20)
 
 class Dice:
-    # A generic Dice
-    __nr_sides = 0
-    __current = 0
-    
-    def __init__(self,nr_sides, current):
-        self.__nr_sides = nr_sides
-        self.__current = current
-        
-    def roll(self):
-        self.__current = random.randint(1,self.__nr_sides)
-        
-    def __str__(self):
-        return str(self.__current)
+    def __init__(self, num_sides, dice_showing):
+        self.num_sides = num_sides
+        self.dice_showing = dice_showing
+ 
+    def roll(self) ->None:        
+        for nr in range( 1, self.num_sides):
+            __random_num = random.randint(1,self.num_sides)
+            self.dice_showing = __random_num
+ 
+    def __str__(self) -> str:
+        return '{}'.format(self.dice_showing)
     
 
 my_dice = Dice(10,5)
