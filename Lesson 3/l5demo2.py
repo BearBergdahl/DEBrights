@@ -1,4 +1,4 @@
-"""myDict = {'nyckel': 2, 'door':3, 'open':4}
+myDict = {'nyckel': 2, 'door':3, 'open':4}
 for k in myDict.keys():
     print(k)
 print(myDict.keys())
@@ -24,7 +24,7 @@ print('*************************************************')
 myactors = my_nested_dict.get('actors')
 pprint.pprint(myactors)
 print(type(myactors))
-"""
+
 
 text = 'Min långa mening!'
 print(text[0])
